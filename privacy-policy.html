@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | KeyPear</title>
+    
+    <!-- Same fonts and scripts as your index.html -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        navy: { 900: '#0B1120', 800: '#0F172A', 700: '#1E293B' },
+                        brand: { 50: '#F0FDFA', 100: '#CCFBF1', 500: '#14B8A6', 600: '#0D9488', 700: '#0F766E' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(226, 232, 240, 0.8); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation (Simplified with a 'Back to Home' button) -->
+    <nav class="fixed w-full top-0 z-40 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+                    <img src="https://drive.google.com/thumbnail?id=1e4WHpYpBjxfQOySQeNZayq9BRGyCcgQz" alt="KeyPear" class="h-8 w-auto object-contain">
+                </a>
+                <a href="index.html" class="text-sm font-medium text-brand-600 flex items-center gap-2 hover:text-brand-700">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Area -->
+    <main class="pt-32 pb-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12">
+                <h1 class="text-3xl font-bold text-navy-900 mb-2">Privacy Policy</h1>
+                <p class="text-sm text-slate-500 mb-8 pb-8 border-b border-slate-100">Last Updated: May 11, 2026</p>
+
+                <!-- YOUR PRIVACY POLICY TEXT GOES HERE -->
+                <div class="space-y-6 text-slate-600 text-sm leading-relaxed">
+                    
+                    <p>Welcome to KeyPear. We respect your privacy and are committed to protecting your personal data...</p>
+
+                    <h2 class="text-lg font-bold text-navy-900 mt-8 mb-3">1. Information We Collect</h2>
+                    <p>Write your policy details here...</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-400 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 KeyPear & Hong Kong Blockchain Society. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
