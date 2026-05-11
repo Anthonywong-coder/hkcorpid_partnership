@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | KeyPear</title>
     
-    <!-- Same fonts and scripts as your index.html -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Tailwind Config -->
+    <!-- Tailwind Config for Custom Brand Colors -->
     <script>
         tailwind.config = {
             theme: {
@@ -30,49 +34,101 @@
         .glass-panel { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(226, 232, 240, 0.8); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-700">
 
-    <!-- Navigation (Simplified with a 'Back to Home' button) -->
-    <nav class="fixed w-full top-0 z-40 glass-panel">
+    <!-- Simple Navigation -->
+    <nav class="fixed w-full top-0 z-40 glass-panel shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+                <a href="/" class="flex items-center gap-2 hover:opacity-80 transition">
                     <img src="https://drive.google.com/thumbnail?id=1e4WHpYpBjxfQOySQeNZayq9BRGyCcgQz" alt="KeyPear" class="h-8 w-auto object-contain">
                 </a>
-                <a href="index.html" class="text-sm font-medium text-brand-600 flex items-center gap-2 hover:text-brand-700">
+                <a href="/" class="text-sm font-medium text-brand-600 flex items-center gap-2 hover:text-brand-700 transition-colors">
                     <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Home
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Content Area -->
+    <!-- Content -->
     <main class="pt-32 pb-24">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12">
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-12 relative overflow-hidden">
+                <!-- Abstract background decoration -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-50 rounded-full blur-3xl opacity-50 -z-10 -translate-y-1/2 translate-x-1/3"></div>
+
                 <h1 class="text-3xl font-bold text-navy-900 mb-2">Privacy Policy</h1>
                 <p class="text-sm text-slate-500 mb-8 pb-8 border-b border-slate-100">Last Updated: May 11, 2026</p>
 
-                <!-- YOUR PRIVACY POLICY TEXT GOES HERE -->
-                <div class="space-y-6 text-slate-600 text-sm leading-relaxed">
-                    
-                    <p>Welcome to KeyPear. We respect your privacy and are committed to protecting your personal data...</p>
+                <div class="space-y-8 text-slate-600 text-sm leading-relaxed">
+                    <section>
+                        <h2 class="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="info" class="w-5 h-5 text-brand-600"></i>
+                            1. Introduction
+                        </h2>
+                        <p>Welcome to KeyPear. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website, use our Digital Wallet, or participate in the Pilot Program with the Hong Kong Blockchain Society (HKBCS).</p>
+                    </section>
 
-                    <h2 class="text-lg font-bold text-navy-900 mt-8 mb-3">1. Information We Collect</h2>
-                    <p>Write your policy details here...</p>
+                    <section>
+                        <h2 class="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="database" class="w-5 h-5 text-brand-600"></i>
+                            2. The Data We Collect About You
+                        </h2>
+                        <p>We may collect, use, store and transfer different kinds of organizational and personal data about you which we have grouped together as follows:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-2">
+                            <li><strong>Identity Data</strong> includes first name, last name, organizational role, and corporate identity (CorpID).</li>
+                            <li><strong>Contact Data</strong> includes email address, telephone numbers, and organizational addresses.</li>
+                            <li><strong>Technical Data</strong> includes internet protocol (IP) address, browser type and version, time zone setting, and operating system.</li>
+                            <li><strong>Credential Data</strong> includes the verifiable cryptographic proofs issued to or held by your digital wallet. (Note: KeyPear does not store the content of your verifiable credentials on centralized servers; they are held entirely locally on your device).</li>
+                        </ul>
+                    </section>
 
+                    <section>
+                        <h2 class="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="activity" class="w-5 h-5 text-brand-600"></i>
+                            3. How We Use Your Data
+                        </h2>
+                        <p>We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:</p>
+                        <ul class="list-disc pl-5 mt-2 space-y-2">
+                            <li>To process your application for the Pilot Program.</li>
+                            <li>To manage our relationship with you, including notifying you about changes to our terms or privacy policy.</li>
+                            <li>To administer and protect our business, platform, and digital wallet ecosystem.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="lock" class="w-5 h-5 text-brand-600"></i>
+                            4. Data Security & Cryptography
+                        </h2>
+                        <p>KeyPear utilizes advanced cryptography, decentralized identifiers (DIDs), and verifiable credentials strictly governed by W3C standards. Your private keys and the contents of your credentials remain securely on your local device. We have put in place appropriate security measures to prevent your basic account data from being accidentally lost, used, or accessed in an unauthorized way.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-lg font-bold text-navy-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="mail" class="w-5 h-5 text-brand-600"></i>
+                            5. Contact Us
+                        </h2>
+                        <p>If you have any questions about this privacy policy or our privacy practices, please contact us at:</p>
+                        <p class="mt-2 font-medium text-brand-700 bg-brand-50 px-3 py-2 rounded-md inline-block border border-brand-100">hello@keypear.com</p>
+                    </section>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Simple Footer -->
     <footer class="bg-white border-t border-slate-200 py-8">
         <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-400 flex flex-col md:flex-row justify-between items-center gap-4">
             <p>&copy; 2026 KeyPear & Hong Kong Blockchain Society. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="terms-of-service.html" class="hover:text-navy-900 transition-colors">Terms of Service</a>
+                <a href="/" class="hover:text-navy-900 transition-colors">Home</a>
+            </div>
         </div>
     </footer>
 
+    <!-- Initialize Icons -->
     <script>lucide.createIcons();</script>
 </body>
 </html>
