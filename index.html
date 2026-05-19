@@ -389,88 +389,99 @@
     </section>
 
     <!-- Practical Use Cases -->
-    <section id="use-cases" class="py-20 bg-slate-50 border-t border-slate-200">
+    <section id="use-cases" class="py-20 bg-slate-100 border-t border-slate-200">
+        <style>
+            #use-case-track::-webkit-scrollbar { display: none; }
+            #use-case-track { -ms-overflow-style: none; scrollbar-width: none; }
+            .carousel-dot { cursor: pointer; border: none; }
+        </style>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <h2 class="text-3xl font-bold text-navy-900 mb-4">Practical Use Cases in Hong Kong</h2>
                 <p class="text-slate-600 text-lg">See how SMEs and NGOs are leveraging verifiable credentials and local digital infrastructure to streamline operations and build instant trust.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- Use Case 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
-                            <i data-lucide="briefcase" class="w-6 h-6 text-brand-600"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-navy-900 mb-2">B2B Vendor Onboarding</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Instantly prove your Business Registration (BR), compliance status, and corporate identity (via CorpID integrations) when onboarding as a supplier for larger enterprises, eliminating weeks of manual due diligence.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <!-- Carousel -->
+            <div class="relative">
+                <div id="use-case-track"
+                     class="flex gap-6 overflow-x-auto pb-4"
+                     style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
 
-                <!-- Use Case 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
-                            <i data-lucide="landmark" class="w-6 h-6 text-brand-600"></i>
+                    <!-- Card 1: B2B Vendor Onboarding -->
+                    <div class="use-case-card bg-white rounded-3xl shadow-md overflow-hidden flex-shrink-0"
+                         style="width: calc(33.333% - 16px); min-width: 260px; scroll-snap-align: start;">
+                        <div class="h-52 flex items-center justify-center"
+                             style="background: linear-gradient(135deg, #5eead4 0%, #0d9488 100%);">
+                            <i data-lucide="briefcase" class="w-16 h-16 text-white"></i>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-navy-900 mb-2">Grant & Funding Applications</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                NGOs and eligible SMEs can securely present verifiable proof of their tax-exempt status, organizational structure, and operational history directly to government bodies and funding institutions.
-                            </p>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-900 mb-3">B2B Vendor Onboarding</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Instantly prove your Business Registration, compliance status, and corporate identity when onboarding as a supplier, eliminating weeks of manual due diligence.</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Use Case 3 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
-                            <i data-lucide="users" class="w-6 h-6 text-brand-600"></i>
+                    <!-- Card 2: Grant & Funding Applications -->
+                    <div class="use-case-card bg-white rounded-3xl shadow-md overflow-hidden flex-shrink-0"
+                         style="width: calc(33.333% - 16px); min-width: 260px; scroll-snap-align: start;">
+                        <div class="h-52 flex items-center justify-center"
+                             style="background: linear-gradient(135deg, #6ee7b7 0%, #059669 100%);">
+                            <i data-lucide="landmark" class="w-16 h-16 text-white"></i>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-navy-900 mb-2">Employee Representation</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Issue verifiable delegate credentials to your staff. Empower your representatives, inspectors, or agents to cryptographically prove they are authorized to act on behalf of your organization in the field.
-                            </p>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-900 mb-3">Grant & Funding Applications</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">NGOs and eligible SMEs can securely present verifiable proof of their tax-exempt status, organizational structure, and operational history to government bodies and funding institutions.</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Use Case 4 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
-                            <i data-lucide="award" class="w-6 h-6 text-brand-600"></i>
+                    <!-- Card 3: Employee Representation -->
+                    <div class="use-case-card bg-white rounded-3xl shadow-md overflow-hidden flex-shrink-0"
+                         style="width: calc(33.333% - 16px); min-width: 260px; scroll-snap-align: start;">
+                        <div class="h-52 flex items-center justify-center"
+                             style="background: linear-gradient(135deg, #7dd3fc 0%, #0284c7 100%);">
+                            <i data-lucide="users" class="w-16 h-16 text-white"></i>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-navy-900 mb-2">Professional Accreditations</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Hold and seamlessly present verified memberships, industry certifications (e.g., ISO standards), and HKBCS association credentials to unlock gated industry resources and build client trust instantly.
-                            </p>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-900 mb-3">Employee Representation</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Issue verifiable delegate credentials to your staff. Empower representatives, inspectors, or agents to cryptographically prove they are authorized to act on behalf of your organization.</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Use Case 5 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-start gap-4">
-                        <div class="w-12 h-12 bg-brand-50 rounded-xl flex items-center justify-center shrink-0">
-                            <i data-lucide="file-pen" class="w-6 h-6 text-brand-600"></i>
+                    <!-- Card 4: Professional Accreditations -->
+                    <div class="use-case-card bg-white rounded-3xl shadow-md overflow-hidden flex-shrink-0"
+                         style="width: calc(33.333% - 16px); min-width: 260px; scroll-snap-align: start;">
+                        <div class="h-52 flex items-center justify-center"
+                             style="background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);">
+                            <i data-lucide="award" class="w-16 h-16 text-white"></i>
                         </div>
-                        <div>
-                            <h3 class="text-xl font-bold text-navy-900 mb-2">Form Pre-filling</h3>
-                            <p class="text-slate-600 text-sm leading-relaxed">
-                                Streamline government and corporate form submissions by automatically pre-filling verified organizational data—such as your Business Registration number, company name, and director details—directly from your digital credentials, eliminating repetitive manual entry.
-                            </p>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-900 mb-3">Professional Accreditations</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Hold and present verified memberships, industry certifications (e.g., ISO standards), and HKBCS association credentials to unlock gated industry resources and build client trust instantly.</p>
                         </div>
                     </div>
+
+                    <!-- Card 5: Form Pre-filling -->
+                    <div class="use-case-card bg-white rounded-3xl shadow-md overflow-hidden flex-shrink-0"
+                         style="width: calc(33.333% - 16px); min-width: 260px; scroll-snap-align: start;">
+                        <div class="h-52 flex items-center justify-center"
+                             style="background: linear-gradient(135deg, #fcd34d 0%, #d97706 100%);">
+                            <i data-lucide="file-pen" class="w-16 h-16 text-white"></i>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-lg font-bold text-navy-900 mb-3">Form Pre-filling</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Streamline government and corporate form submissions by automatically pre-filling verified organizational data—Business Registration number, company name, and director details—directly from your digital credentials.</p>
+                        </div>
+                    </div>
+
                 </div>
+            </div>
+
+            <!-- Dot Navigation -->
+            <div class="flex justify-center items-center gap-2 mt-8" id="carousel-dots">
+                <button class="carousel-dot h-2.5 w-6 rounded-full bg-brand-600 transition-all duration-300" data-index="0"></button>
+                <button class="carousel-dot h-2.5 w-2.5 rounded-full bg-slate-300 transition-all duration-300" data-index="1"></button>
+                <button class="carousel-dot h-2.5 w-2.5 rounded-full bg-slate-300 transition-all duration-300" data-index="2"></button>
+                <button class="carousel-dot h-2.5 w-2.5 rounded-full bg-slate-300 transition-all duration-300" data-index="3"></button>
+                <button class="carousel-dot h-2.5 w-2.5 rounded-full bg-slate-300 transition-all duration-300" data-index="4"></button>
             </div>
         </div>
     </section>
@@ -876,6 +887,48 @@
                 form.reportValidity();
             }
         }
+    </script>
+
+    <!-- Use Case Carousel -->
+    <script>
+        (function () {
+            const track = document.getElementById('use-case-track');
+            const cards = Array.from(document.querySelectorAll('.use-case-card'));
+            const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+
+            function setActiveDot(index) {
+                dots.forEach(function (dot, i) {
+                    if (i === index) {
+                        dot.style.width = '24px';
+                        dot.classList.add('bg-brand-600');
+                        dot.classList.remove('bg-slate-300');
+                    } else {
+                        dot.style.width = '10px';
+                        dot.classList.remove('bg-brand-600');
+                        dot.classList.add('bg-slate-300');
+                    }
+                });
+            }
+
+            dots.forEach(function (dot, i) {
+                dot.addEventListener('click', function () {
+                    cards[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+                    setActiveDot(i);
+                });
+            });
+
+            // Update active dot based on scroll position
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+                        var index = cards.indexOf(entry.target);
+                        if (index !== -1) setActiveDot(index);
+                    }
+                });
+            }, { root: track, threshold: 0.5 });
+
+            cards.forEach(function (card) { observer.observe(card); });
+        })();
     </script>
 </body>
 </html>
